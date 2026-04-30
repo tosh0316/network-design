@@ -1,0 +1,62 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", "Yu Gothic", "Helvetica Neue", "Meiryo", sans-serif;
+  color: #1a1a1a;
+  background: #fafaf6;
+  font-feature-settings: "palt" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  padding: 5px 12px;
+  background: #ffffff;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  font-family: inherit;
+  transition: background 100ms;
+}
+
+button:hover:not(:disabled) {
+  background: #1a1a1a;
+  color: #fafaf6;
+}
+
+button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 0;
+  font-size: 13px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #1f6feb;
+  outline-offset: -1px;
+}
+
+.react-flow__background {
+  background-color: #fafaf6 !important;
+}
